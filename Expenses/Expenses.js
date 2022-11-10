@@ -46,7 +46,7 @@ function YourCut(){
                     temp=-user.balance;
                     user.balance=0;
                     PUser.balance+=-temp;
-                    line +=user.name +" doit " + temp +" à "+PUser.name;
+                    line +=user.name +" doit " + temp +" euros à "+PUser.name;
                     result.push(line);
                 }
             }
