@@ -4,7 +4,6 @@ console.log(process.env.MONGO_URI)
 
 
 
-
 import mongoose, {disconnect, model} from 'mongoose';
 import * as Console from "console";
 const { Schema } = mongoose;
@@ -50,7 +49,7 @@ async function main(){
 
     const Location = new model('Groups', schemaGroup)
 
-
+    // test remplissage DB
     const premierLocation = new Location({
         group_name: "Fuck Bonnefoy",
         group_id: 1,

@@ -46,7 +46,7 @@ function YourCut(){
                     temp=-user.balance;
                     user.balance=0;
                     PUser.balance+=-temp;
-                    line +=user.name +" doit " + temp +" euros à "+PUser.name;
+                    line +=user.name +" doit " + temp +" euros à "+PUser.name+"\n";
                     result.push(line);
                 }
             }
@@ -54,11 +54,40 @@ function YourCut(){
     }
     return result;
 }
-function main(){
+
+function AddExpenses(user,value){
+    if(user in GroupUsers){
+        user["exp"]=user.exp+value
+    }
+    else{
+        console.log("error in getting the user")
+        alert("error in getting the user")
+    }
+}
+
+function RemoveExpenses(user,value){
+    if(user in GroupUsers){
+        if(value>=user["exp"]) {
+            user["exp"] = user.exp - value
+            console.log("error in getting the user")
+        }
+    }
+    else{
+        console.log("error in getting the user")
+        alert("error in getting the user")
+    }
+}
+
+function SeeExpenses(){
     total=GetTotal();
     SetBalance(total);
     transaction =YourCut();
-    console.log(transaction)
+    transaction=transaction.toString().replace(',','');
+    console.log(transaction);
+    alert(transaction);
 
 }
-main();
+const user = {"username":"Thomas","age":16};
+function main(user){
+    document.getElementById("greeting").innerHTML = "Hello " + user.username + " !";
+}
