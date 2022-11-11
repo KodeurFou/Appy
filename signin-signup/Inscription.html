@@ -3,22 +3,47 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Titre</title>
     </head>
 
     <body>
         <div id="forms">
-            <h2> Inscription</h2>
-          <form action="/action_page.php">
-  <label for="fname">Email :</label><br>
-  <input type="text" id="fname" name="fname" value="mon.mail@mail.com"><br>
-  <label for="lname">Mot de passe :</label><br>
-  <input type="text" id="lname" name="lname" value="Password"><br><br>
-  <a href="Mot_de_passe_oublie.html">Mot de passe oublié</a>
-  <input type="submit" value="Connexion">
-</form> 
-<p> Besoin d'un compte ?<a href="Inscription.html">S'inscrire</a></p>
+            <div id="main">
+                <div id ="text">
+                    <form class="login100-form validate-form">
 
+                        <span id="forms-titre"> Créer un compte</span>
+                      <br/>
+
+                        <div class="champs" data-validate = "Email requis"> 
+                          <label for="fname">Email </label><br>
+                            <i class="fa fa-user-o"></i>
+                            <input type="text" id="fname" name="fname"
+                         placeholder="Type your email"><br><hr/><br/>
+                        </div>
+
+                        <div class="champs" data-validate = "Email requis"> 
+                          <label for="nname">Nom d'utilisateur </label><br>
+                            <i class="fa fa-user-o"></i>
+                            <input type="text" id="nname" name="nname"
+                         placeholder="Type your name"><br><hr/><br/>
+                        </div>
+
+            <div class="champs" data-validate = "Mot de passe requis">
+                <label for="lname">Mot de passe </label><br>
+                <i class="fa fa-user-o"></i>
+                <input type="password" id="lname" name="lname" placeholder="Type your password"><br><hr/>
+            </div>
+                      <br/>
+            
+                      <div id="truc">            <input type="submit" value="Connexion" class="truc"></div>
+
+
+            <p><a href="Connection.html">Déjà un compte?</a></p>
+</form> 
+</div>
+</div>
         </div>
     </body>
 </html>

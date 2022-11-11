@@ -3,22 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Titre</title>
     </head>
 
     <body>
         <div id="forms">
-            <h2> Mot de passe oublié</h2>
-          <form action="/action_page.php">
-  <label for="fname">Email :</label><br>
-  <input type="text" id="fname" name="fname" value="mon.mail@mail.com"><br>
-  <label for="lname">Mot de passe :</label><br>
-  <input type="text" id="lname" name="lname" value="Password"><br><br>
-  <a href="Mot_de_passe_oublie.html">Mot de passe oublié</a>
-  <input type="submit" value="Connexion">
-</form> 
-<p> Besoin d'un compte ?<a href="Inscription.html">S'inscrire</a></p>
+            <div id="main">
+                <div id ="text">
+                    <form class="login100-form validate-form">
 
+                        <span id="forms-titre"> Mot de passe oublié</span>
+                      <br/>
+
+                        <div class="champs" data-validate = "Email requis"> 
+                          <label for="fname">Email </label><br>
+                            <i class="fa fa-user-o"></i>
+                            <input type="text" id="fname" name="fname"
+                         placeholder="Type your email"><br><hr/><br/>
+                        </div>
+                      <br/>
+            
+                      <div id="truc">            <input type="submit" value="Envoyer un email" class="truc"></div>
+
+
+            <p><a href="C:\Users\gwenb\OneDrive\Documents\A4\Software Engineering\signin-signup\Inscription.html">S'inscrire</a></p>
+</form> 
+</div>
+</div>
         </div>
     </body>
 </html>

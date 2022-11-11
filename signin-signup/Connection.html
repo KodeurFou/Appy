@@ -3,33 +3,41 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Titre</title>
     </head>
 
     <body>
         <div id="forms">
             <div id="main">
-            <div id ="text">
-          <form class="login100-form validate-form">
-            <span class="forms-titre">
-                        Authentification
-                    </span>
-            <div class="champs" data-validate = "Email requis"> 
-              <label for="fname">Email :</label>
-              <span class="focus-input100" data-symbol="&#xf206;"></span>
-  <input type="text" id="fname" name="fname" placeholder="Type your email"><br></div>
+                <div id ="text">
+                    <form class="login100-form validate-form">
+
+                        <span id="forms-titre"> Authentification</span>
+                      <br/>
+
+                        <div class="champs" data-validate = "Email requis"> 
+                          <label for="fname">Email </label><br>
+                            <i class="fa fa-user-o"></i>
+                            <input type="text" id="fname" name="fname"
+                         placeholder="Type your email"><br><hr/><br/>
+                        </div>
 
             <div class="champs" data-validate = "Mot de passe requis">
-                <label for="fname">Mot de passe :</label>
-                <span class="focus-input100" data-symbol="&#xf190;"></span>
-  <input type="text" id="lname" name="lname" placeholder="Type your password"><br></div>
-  
-            <span class="focus-input100" data-symbol="&#xf206;"></span>
-            <div class="text-right p-t-8 p-b-31">
-  <a href="Mot_de_passe_oublie.html">Mot de passe oublié</a>
+                <label for="fname">Mot de passe </label><br>
+                <i class="fa fa-user-o"></i>
+                <input type="password" id="lname" name="lname" placeholder="Type your password"><br><hr/>
             </div>
-  <input type="submit" value="Connexion">
-<p> Besoin d'un compte ?<a href="Inscription.html">S'inscrire</a></p>
+
+            <div class="text-right p-t-8 p-b-31">
+            <a href="Mot_de_passe_oublie.html">Mot de passe oublié</a>
+            </div>
+                      <br/>
+            
+                      <div id="truc">            <input type="submit" value="Connexion" class="truc"></div>
+
+
+            <p> Besoin d'un compte ?<a href="Inscription.html">S'inscrire</a></p>
 </form> 
 </div>
 </div>
