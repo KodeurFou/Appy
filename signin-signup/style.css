@@ -15,10 +15,9 @@ a {
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
 }
 
 a:focus {
@@ -28,10 +27,6 @@ a:focus {
 a:hover {
 	text-decoration: none;
   color: #a64bf4;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
 }
 
 p {
@@ -45,6 +40,7 @@ p {
 input {
 	outline: none;
 	border: none;
+  background-color: #FFFFE0;
 }
 
 div#forms {
@@ -62,25 +58,47 @@ div#forms {
 }
 
 div#main {
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 400px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 div#text {
-	height: 200px;
+    height: 100%;
+    width: 100%;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  background-color: #FFFFE0;
+
 }
 
-.forms-titre {
-	position: relative;
-	display: flex;
-	justify-content: center;
+label {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
 }
 
+span {
+  font-family: Poppins-Regular;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.truc {
+width: 100%;
+background: #0066A2;
+color: white;
+border-color: #0066A2;
+height: 30px;
+border-radius: 25px;
+/*width: 100px;*/
+font: bold 15px arial, sans-serif;
+text-shadow:none;
+}
